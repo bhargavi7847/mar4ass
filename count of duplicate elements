@@ -1,0 +1,26 @@
+l=[]
+n=int(input('how many elements: '))
+for i in range(n):
+    x=int(input())
+    l.append(x)
+    i=i+1
+print(l)
+res=[]
+c=0
+for i in l:
+    if l.count(i)>1:
+        if i not in res:
+            res.append(i)
+            c=c+1
+print('duplicate element:',res)
+print('count:',c)
+      
+OUTPUT:
+how many elements: 4
+1
+2
+1
+4
+[1, 2, 1, 4]
+duplicate element: [1]
+count: 1
